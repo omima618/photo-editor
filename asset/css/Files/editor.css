@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.toolbar li {
+	margin-left: 16px;
+}
+
+.toolbar a {
+	cursor: pointer;
+    color:#fff!important;
+}
+.toolbar {
+	padding: 16px;
+	background: #121212;
+    color:#fff!important;
+}
+.toolbar .head {
+	display: flex;
+	grid-gap: 10px;
+	margin-bottom: 16px;
+	flex-wrap: wrap;
+    color:#fff!important;
+}
+.toolbar .head > input {
+	max-width: 100px;
+	padding: 6px 10px;
+	border-radius: 6px;
+	border: 2px solid #121212;
+	outline: none;
+    color:#fff!important;
+}
+.toolbar .head select {
+	background: #383838;
+	border: 2px solid #383838;
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+    color:#fff!important;
+}
+.toolbar .head .color {
+	background: #383838;
+	border: 2px solid #383838;
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	grid-gap: 6px;
+	padding: 0 10px;
+    color:#fff!important;
+}
+.toolbar .head .color span {
+	font-size: 14px;
+    color:#fff!important;
+}
+.toolbar .head .color input {
+	border: none;
+	padding: 0;
+    color:#fff!important;
+	width: 26px;
+	height: 26px;
+	background: #121212;
+	cursor: pointer;
+}
+.toolbar .head .color input::-moz-color-swatch {
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 50%;
+    color:#fff!important;
+}
+.toolbar .btn-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	grid-gap: 10px;
+    color:#fff!important;
+}
+.toolbar .btn-toolbar button {
+	background: #121212;
+	border: 2px solid #121212;
+	border-radius: 6px;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+    color:#fff!important;
+}
+.toolbar .btn-toolbar button:hover {
+	background: #404040;
+    color:#fff!important;
+}
+#content {
+	padding: 16px;
+	outline: none;
+	max-height: 50vh;
+	overflow: auto;
+    color:#fff!important;
+}
+#show-code[data-active="true"] {
+	background: #454545;
+    color:#fff!important;
+}

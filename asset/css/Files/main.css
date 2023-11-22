@@ -1,0 +1,370 @@
+@layer utilities {
+    *{
+ 
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+}
+
+
+    nav{
+      background-color: #000!important;
+      border-bottom-right-radius:27px!important;
+      border-bottom-left-radius:27px!important;
+    }
+    nav div{
+      background-color: #121212!important;
+      border-bottom-right-radius:27px!important;
+      border-bottom-left-radius:27px!important;
+    }
+   
+    thead ,#simple-search ,button ,section nav ul li a{
+          --tw-bg-opacity: 1!important;
+          /* background-color: #181818a3!important; */
+          background: rgba(255, 255, 255, 0.07)!important;
+      }
+      .Client-Head{
+        justify-content: end!important;
+
+      }
+      
+       .button-link{
+        margin-right:10px;
+        width: 180px;
+        height: 48px;
+        border-radius: 8px;
+      }
+       .button-link:nth-child(2){
+        background: linear-gradient(93.55deg, #E50914 1.09%, #FF6666 99.2%)!important; 
+      }
+     .button-link:nth-child(1){
+        background-color:#000!important;
+        border:1px solid #fff!important; 
+      }
+      .title-page{
+
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+letter-spacing: 0.005em;
+
+/* White/60 */
+color: rgba(255, 255, 255, 0.6);
+
+/* White/87% */
+color: rgba(255, 255, 255, 0.87);
+      }
+      input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none;
+}
+
+
+
+      .btn-status{
+        /* Label */
+      justify-content: center;
+      align-items: center;
+      padding: 4px 24px;
+
+      width: 104px;
+      height: 32px;
+      color: rgba(255, 255, 255, 0.87);
+      /* Status/Active */
+      background: #3FAE00;
+      border-radius: 8px;
+      }
+
+      .active{
+        background:rgba(63, 174, 0, 1)!important;
+      }
+      .stop{
+        background:rgba(128, 128, 129, 1)!important;
+      }
+
+      .refuased{
+        background:rgba(246, 65, 65, 1)!important;
+      }
+    aside{
+      
+      background-color: #121212!important;
+      border-top-right-radius:27px!important;
+      border-bottom-right-radius:27px!important;
+    }
+
+    aside div{
+      border-top-right-radius:27px!important;
+      border-bottom-right-radius:27px!important;
+      background-color: #121212!important;
+    } 
+  }
+
+  input[type="radio"]:checked+label{ 
+    border-color:rgba(243, 142, 147, 1)!important;
+    color:#727272!important;
+   } 
+
+
+  .search{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 29px;
+    margin: 0 auto;
+    
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    gap: 8px;
+    width: 500px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    
+  }
+  .search::placeholder{
+    /* Search in dashboard */
+      width: 50px;
+      height: 17px;
+      /* identical to box height, or 17px */
+      text-align: right;
+      /* Text/38% */
+      color: rgba(255, 255, 255, 0.38);
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+
+  }
+  *{
+    
+    font-style: normal;
+  }
+  .main{
+    /* Main */
+  width: 190px;
+  height: 24px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 24px;
+  /* identical to box height, or 218% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.32);
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+  }
+
+  .confirm-button-class {
+background-color: red !important;
+color: white !important;
+border: none !important;
+}
+
+.title-class {
+font-size: 15px !important;
+}
+
+
+.icon-class {
+font-size: 10px !important;
+}
+.swal2-popup{
+background-color: #121212;
+padding: 30px;
+width: 36vw;
+color:#fff!important;
+}
+.swal2-title{
+font-size: 1.125rem;
+line-height: 1.75rem;
+
+}
+.confirm-button-class .swal2-icon svg {
+width: 12px !important;
+height: 12px !important;
+}
+
+.swal2-actions .swal2-confirm {
+background: linear-gradient(93.55deg, #E50914 1.09%, #FF6666 99.2%)!important;
+color: white !important;
+border: none !important;
+box-shadow: none !important;
+border-radius: 0.5rem;
+width: 8vw!important;
+text-align: center;
+}
+
+.swal2-actions .swal2-cancel {
+border-color: #000 !important;
+box-shadow: none !important;
+border: 0.5px solid !important;
+border-color:rgb(107 114 128 / var(--tw-border-opacity)) !important;
+opacity: 1;
+color:#fff;
+border-radius: 0.5rem;
+width: 8vw!important;
+text-align: center;
+}
+
+.swal2-confirm:focus, .swal2-cancel:focus {
+box-shadow: none !important;
+}
+
+.swal2-actions button:hover {
+
+}
+
+
+button{
+
+color:white!important;
+}
+thead tr th, thead tr td{
+color:#fff!important;
+}
+.search_text{
+   color:#fff!important;
+}   
+
+
+.hover\:bg-gray-100:hover{
+   color:#000!important;
+}
+
+
+div:where(.swal2-container) .swal2-html-container {
+    overflow: hidden;
+}
+
+.swal2-confirm {
+    display: none !important;
+}
+
+.swal2-popup {
+    /* width: 46vw; */
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+}
+
+.resize-drag {
+    /* position: absolute; */
+    user-select: none;
+    transform: translate(0%, 0%);
+}
+
+.resize-handler {
+    height: 10px;
+    width: 10px;
+    background-color: #0055ff;
+    position: absolute;
+    border-radius: 100px;
+    border: 1px solid #ffffff;
+    user-select: none;
+    display: none;
+}
+
+.resize-handler:hover {
+    background-color: #0000cc;
+}
+
+.resize-handler.rotate {
+    cursor: url('https://findicons.com/files/icons/1620/crystal_project/16/rotate_ccw.png'), auto;
+}
+
+.resize-drag { 
+    touch-action: none;
+    
+}
+
+::-webkit-scrollbar { 
+width: 10px; 
+} 
+
+/* Track */
+::-webkit-scrollbar-track { 
+background: #888; 
+border-radius: 5px; 
+} 
+
+/* Handle */
+::-webkit-scrollbar-thumb { 
+background: #000; 
+border-radius: 5px; 
+} 
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { 
+background: #555; 
+}
+
+button{
+    width: fit-content;
+}
+
+.hexagon {
+position: relative;
+width: 290px;
+height: 173.21px;
+margin: 86.60px 0;
+border-left: solid 5px #333333;
+border-right: solid 5px #333333;
+background-color:#00000000;
+}
+
+.hexagon:before,
+.hexagon:after {
+box-sizing: border-box;
+content: "";
+position: absolute;
+z-index: 1;
+width: 212.13px;
+height: 212.13px;
+-webkit-transform: scaleY(0.5774) rotate(-45deg);
+-ms-transform: scaleY(0.5774) rotate(-45deg);
+transform: scaleY(0.5774) rotate(-45deg);
+left: 38.9340px;
+}
+
+.hexagon:before {
+top: -106.0660px;
+border-top: solid 7.0711px #333333;
+border-right: solid 7.0711px #333333;
+background:#00000000;
+}
+
+.hexagon:after {
+bottom: -106.0660px;
+border-bottom: solid 7.0711px #333333;
+border-left: solid 7.0711px #333333;
+background:#00000000;
+}
+[data-type="shape"] {
+  background-color: #fff;
+}
