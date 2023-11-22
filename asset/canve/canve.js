@@ -102,7 +102,7 @@ $(document).on("click","#shape-right",function(){
      var randomStringb = randomString();
     $(".preview").append(`
 
-    <canves data-id="0" data-type="shape"  layer-type="shape" layer-target="target${randomStringb}" class="bg-white resize-drag  shape max-w-full max-h-full border border-gray-800 rounded rounded-xl  resize-drag " style="z-index:${zindex};border-width: 5px;border-color:#fff;width:120px;height:120px!important;-webkit-clip-path: polygon(0 51%, 61% 53%, 60% 40%, 77% 61%, 59% 81%, 59% 66%, 0 65%);clip-path: polygon(0 51%, 61% 53%, 60% 40%, 77% 61%, 59% 81%, 59% 66%, 0 65%);">
+    <canves data-id="0" data-type="shape"  layer-type="shape" layer-target="target${randomStringb}" class="bg-white resize-drag  shape max-w-full max-h-full border border-gray-800 rounded-xl  resize-drag " style="z-index:${zindex};border-width: 5px;border-color:#fff;width:120px;height:120px!important;">
     
 
     </canves>
@@ -117,7 +117,7 @@ $(document).on("click","#shape-left",function(){
      var randomStringb = randomString();
     $(".preview").append(`
  
-        <canves data-id="0" data-type="shape"  layer-type="shape" layer-target="target${randomStringb}" class="bg-white resize-drag  shape max-w-full max-h-full border border-gray-800 rounded rounded-xl  resize-drag " style="z-index:${zindex};border-width: 5px;border-color:#fff;width:120px;height:120px!important;-webkit-clip-path: polygon(12% 16%, 13% 27%, 100% 27%, 100% 37%, 13% 36%, 11% 46%, 1% 31%);clip-path: polygon(12% 16%, 13% 27%, 100% 27%, 100% 37%, 13% 36%, 11% 46%, 1% 31%);">
+        <canves data-id="0" data-type="shape"  layer-type="shape" layer-target="target${randomStringb}" class="bg-white resize-drag  shape max-w-full max-h-full border border-gray-800 rounded-xl  resize-drag " style="z-index:${zindex};border-width: 5px;border-color:#fff;width:120px;height:120px!important; -webkit-clip-path: polygon(0 51%, 61% 53%, 60% 37%, 77% 61%, 59% 81%, 59% 66%, 0 65%);clip-path: polygon(0 51%, 61% 53%, 60% 37%, 77% 61%, 59% 81%, 59% 66%, 0 65%);">
         
         </canves>
 
