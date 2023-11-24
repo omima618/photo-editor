@@ -25,7 +25,6 @@
   width: fit-content;
 }
 .swal2-popup-background{
-  width: 42vw!important;
   background-color: #000!important;
 }
 select{
@@ -646,7 +645,7 @@ button , button label{
                                 <!-- Text Nav Bar-->
                                 <div class="tools-board border head px-2 py-4 absolute z-10 w-full top-0 left-0 right-0" id="text-template-show"
                                     style="align-items: center;background-color: #121212;display:none; border-color: #121212;border-radius: 0px 0px 11px 11px;">
-                                    <div class="flex gap-3 justify-center items-center options"
+                                    <div class="flex flex-wrap gap-4 md:gap-3 items-center options"
                                         id="list-text-show-edit">
                                         <button class="flex flex-col gap-1 items-center text-center" style="background-color: #fff0!important;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
@@ -1319,7 +1318,7 @@ button , button label{
                                 <!-- Shape NavBar Bar-->
                                 <div class="tools-board border head px-2 py-4 absolute z-10 w-full top-0 left-0 right-0" id="list-shape-show"
                                     style="    background-color: #121212;display:none; border-color: #121212;border-radius: 0px 0px 11px 11px;">
-                                    <div class="flex gap-8 px-8 items-center options">
+                                    <div class="flex flex-wrap gap-4 md:gap-8 px-4 md:px-8 items-center options">
                                         <button type="button" id="circle" class="text-align:center option tool"
                                             style="background-color: #fff0!important;">
                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -1503,7 +1502,7 @@ button , button label{
                                 <div class="tools-board border head px-2 py-4 absolute z-10 w-full top-0 left-0 right-0"
                                     id="list-shape-show-edit"
                                     style="background-color: #121212;display:none;border-color: #121212;border-radius: 0px 0px 11px 11px;">
-                                    <div class="flex gap-4 px-4 items-center options">
+                                    <div class="flex flex-wrap gap-4 px-4 items-center options">
                                         <button class="flex flex-col gap-1 items-center text-center" style="background-color: #fff0!important;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
                                                 <g fill="currentColor">
@@ -1942,11 +1941,11 @@ button , button label{
                                     </div>
                                     <!-- End Design Tenplate  -->
                                     <!-- Start Nav bar Zoom -->
-                                    <div class="h-fit sm:h-50 space-y-4 py-2 sm:py-4 px-2 -translate-x-[50%] sm:translate-x-0 left-[50%] sm:left-auto sm:right-[2%] bottom-[-20px] sm:bottom-[15%] dark:bg-gray-900 dark:text-gray-100 border rounded-xl"
+                                    <div class="h-fit sm:h-50 space-y-4 py-2 sm:py-4 px-2 right-[2%] bottom-[10%] sm:bottom-[15%] dark:bg-gray-900 dark:text-gray-100 border rounded-xl"
                                         style="background-color: #121212;
                                                                     border-color: #121212;width:fit-content;position: absolute;right:2%;">
-                                        <div class="flex sm:gap-[unset] sm:block sm:divide-y sm:divide-gray-700">
-                                            <ul class="sm:pt-2 sm:pb-4 space-y-2 text-sm flex sm:block">
+                                        <div class="block divide-y divide-gray-700">
+                                            <ul class="sm:pt-2 sm:pb-4 mb-4 sm:mb-0 space-y-2 text-sm flex sm:block">
                                                 <li style="text-align: center;text-align: -webkit-center;">
                                                     <button id="zoomin" rel="noopener noreferrer"
                                                         style="background-color: #121212!important;"
@@ -2118,8 +2117,8 @@ button , button label{
                 <div id="previewImg" style="display: none;"></div>
 
                 <!-- start  Model List -->
-                    <div id="crypto-modal" aria-hidden="false"
-    class="crypto-modal fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-w-full max-h-full">
+    <div id="crypto-modal" aria-hidden="false"
+        class="crypto-modal fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-w-full max-h-full">
     <div class="relative w-screen max-h-full" style="align-self: center;text-align:center;text-align: -webkit-center;">
         <div class="relative bg-dark rounded-2xl shadow "
             style="background-color: #121212;width: 100%;" id="list-show">
@@ -2176,14 +2175,14 @@ button , button label{
                        
                     </div>
 
-                    <div class="card-header grid grid-cols-2 px-5 py-2" style="background-color: #232323;color: #fff;height: 40px;">
-                        <div class="flex" style="font-size: 17px;align-self: center;">
-                            Number of products
+                    <div class="card-header flex justify-between gap-2 px-5 py-2" style="background-color: #232323;color: #fff;">
+                        <div class="text-lg">
+                                Number of products
                         </div>
 
-                        <div class="flex" style="font-size: 17px;    justify-content: right;">
+                        <div class="text-lg">
                             <input type="number" style="width: 28%;height: 100%;text-align: -webkit-match-parent;text-align-last: center;" class="number-product text-gray-50  focus:outline-none focus:border-blue-700  border-0 bg-gray-800 rounded" value="1" placeholder="1" name="product_number"  max="20" min="0" 
-                            onKeyDown="if(this.value.length==4 && event.keyCode>47 && event.keyCode < 58)return false;" />
+                                onKeyDown="if(this.value.length==4 && event.keyCode>47 && event.keyCode < 58)return false;" />
                         </div>
                     </div>
                     <div class="card-body px-4" style="line-height: 45px;text-align-last: justify;">
@@ -2203,18 +2202,15 @@ button , button label{
                                 <input
                                     class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
                                     type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick='handleClick(this);' name="product_description"/>
-                            </div>
-
-                       
+                            </div>       
                     </div>
 
-
-                    <div class="card-header grid grid-cols-2 px-5 py-2" style="background-color: #232323;color: #fff;height: 40px;">
-                        <div class="flex" style="font-size: 17px;align-self: center;">
+                    <div class="card-header flex justify-between gap-2 px-5 py-2" style="background-color: #232323;color: #fff;">
+                        <div class="text-lg">
                             Number of Price
                         </div>
 
-                        <div class="flex" style="font-size: 17px;    justify-content: right;">
+                        <div class="text-lg">
                             <input type="number" style="width: 28%;height: 100%;text-align: -webkit-match-parent;text-align-last: center;" class="number-size-product number_size text-gray-50  focus:outline-none focus:border-blue-700  border-0 bg-gray-800 rounded" value="1" placeholder="1" name="size_number" max="9999" min="0" 
                             onKeyDown="if(this.value.length==4 && event.keyCode>47 && event.keyCode < 58)return false;"/>
                         </div>
@@ -2236,13 +2232,11 @@ button , button label{
                                     type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick='handleClick(this);' name="sizes[${numb}][price]" />
                             </div>
                     </div>
-
-
                 </div>
             </div>
-            <div class="p-6 text-right">
+            <div class="flex flex-wrap-reverse gap-x-4 gap-y-2">
                 <button data-modal-hide="popup-modal" style="display:inline-flex!important" type="button"
-                    class=" mr-4 button-link-model text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+                    class="button-link-model text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="mr-2"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -2280,7 +2274,7 @@ button , button label{
                     class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                     <div class="relative w-full max-w-md max-h-full" style="background-color: #121212!important">
                         <div class="relative bg-dark rounded-2xl shadow"
-                            style="background-color: #121212;    padding: 30px 20px 15px 20px;width: 45vw;">
+                            style="background-color: #121212;    padding: 30px 20px 15px 20px;width: fit-content;">
                             <p class="text-center text-white"
                                 style="font-size: 25px;border-bottom: 1px solid #c7c3c3a6;line-height: 57px;font-weight: 700;">
                                 Upload</p>
@@ -2288,8 +2282,8 @@ button , button label{
                                 <p class="text-center text-white"
                                     style="font-size: 25px;line-height: 57px;font-weight: 700;">Select type</p>
                                 <div 
-                                    class="items-center  mt-8 font-medium text-gray-900 grid grid-cols-2 whitespace-nowrap dark:text-white">
-                                    <div class="flex  w-full">
+                                    class="items-center justify-center flex flex-wrap gap-8 px-8 mt-8 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <div>
                                         <label for="imageUpload" data-id="{{$menu->id}}" id="imagePrevieww"
                                             style="background-size: cover;background-repeat: no-repeat;background-position: center;margin-top:0px!important;"
                                             class="flex flex-col mt-0 items-center justify-center w-full h-40   cursor-pointer ">
@@ -2320,7 +2314,7 @@ button , button label{
                                         </label>
                                     </div>
 
-                                    <div class="flex  w-full">
+                                    <div>
                                         <label for="videoUpload"  id="videoPreview"
                                             style="background-size: cover;background-repeat: no-repeat;background-position: center;margin-top:0px!important;"
                                             class="flex flex-col mt-0 items-center justify-center w-full h-40 cursor-pointer ">

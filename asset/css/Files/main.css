@@ -192,13 +192,15 @@ font-size: 15px !important;
 .icon-class {
 font-size: 10px !important;
 }
+
 .swal2-popup{
 background-color: #121212;
-padding: 30px;
+padding: 0;
 width: fit-content;
-max-width: calc(100% - 40px);
+max-width: calc(100% - 20px);
 color:#fff!important;
 }
+
 .swal2-title{
 font-size: 1.125rem;
 line-height: 1.75rem;
@@ -257,16 +259,16 @@ color:#fff!important;
 }
 
 
+div:where(.swal2-container) .swal2-html-container{
+    margin: 0.5rem 1rem 1rem !important;
+}
+
 div:where(.swal2-container) .swal2-html-container {
     overflow: hidden;
 }
 
 .swal2-confirm {
     display: none !important;
-}
-
-.swal2-popup {
-    /* width: 46vw; */
 }
 
 video {
