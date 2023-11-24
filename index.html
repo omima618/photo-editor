@@ -2609,22 +2609,10 @@ window.dragMoveListener = dragMoveListener
 
 
         $(document).on("click", "#shape", function() {
-            if ($('#text-template-show').css('display') !== 'none') {
-                $('#text-template-show').slideToggle("slow");
-            }
-            if ($('#list-shape-show-edit').css('display') !== 'none') {
-                $('#list-shape-show-edit').slideToggle("slow");
-            }
             $('#list-shape-show').slideToggle("slow");
         });
-        $(document).on("click", "#text-template", function() {
-            if ($('#list-shape-show').css('display') !== 'none') {
-                $('#list-shape-show').slideToggle("slow");
-            }
 
-            if ($('#list-shape-show-edit').css('display') !== 'none') {
-                $('#list-shape-show-edit').slideToggle("slow");
-            }
+        $(document).on("click", "#text-template", function() {
             var randomStringb = randomString();
             $("#html-content-holder").append(`
                 <div data-type="text" data-id="0" layer-type="text" layer-target="target${randomStringb}"  contenteditable="true" spellcheck="false" class="resize-drag shape max-w-full max-h-full"  style="width:250px!important;z-index:${zindex};font-size: 30px;border:1px solid #fff;background-color: #0000;color:#fff;">
