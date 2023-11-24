@@ -13,7 +13,7 @@ $(document).on("click","#circle",function(){
     // ctx.beginPath();
     // ctx.arc(95,50,40,0,2*Math.PI);
     // ctx.stroke();
-   	SaveCacheDateToLayer("target"+randomStringb,"shape",zindex);
+   	SaveCacheDateToLayer("target"+randomStringb,"shape",zindex, "circle");
     zindex++;
 });
 
@@ -31,7 +31,7 @@ $(document).on("click","#Square-rtotat",function(){
 
     `);
     
-     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex);
+     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex, "square-rtotat");
     zindex++;
 });
 
@@ -51,7 +51,7 @@ $(document).on("click","#Square",function(){
     // ctx.beginPath();
     // ctx.rect(20, 20, 150, 100);
     // ctx.stroke();
-     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex);
+     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex, "Square");
     zindex++;
 });
 
@@ -65,7 +65,7 @@ $(document).on("click","#hexagon",function(){
         </canves>
 
     `);
-     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex);
+     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex, "hexagon");
     zindex++;
 });
 
@@ -94,7 +94,7 @@ $(document).on("click","#rectangular",function(){
 
     // // Draw it
     // ctx.stroke();
-     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex);
+     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex, "rectangular");
     zindex++;
 });
 
@@ -104,7 +104,7 @@ $(document).on("click","#shape-right",function(){
         <canves data-id="0" data-type="shape"  layer-type="shape" layer-target="target${randomStringb}" class="bg-white resize-drag  shape max-w-full max-h-full border border-gray-800 rounded-xl  resize-drag " style="z-index:${zindex};border-width: 5px;border-color:#fff;width:120px;height:120px!important;-webkit-clip-path: polygon(100% 51%, 39% 53%, 40% 37%, 22% 61%, 41% 81%, 41% 66%, 100% 65%);clip-path: polygon(100% 51%, 39% 53%, 40% 37%, 22% 61%, 41% 81%, 41% 66%, 100% 65%);">  
         </canves>
     `);
-     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex);
+     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex, "shape-right");
     zindex++;
 });
 
@@ -116,7 +116,7 @@ $(document).on("click","#shape-left",function(){
         <canves data-id="0" data-type="shape"  layer-type="shape" layer-target="target${randomStringb}" class="bg-white resize-drag  shape max-w-full max-h-full border border-gray-800 rounded-xl  resize-drag " style="z-index:${zindex};border-width: 5px;border-color:#fff;width:120px;height:120px!important;-webkit-clip-path: polygon(0px 51%, 61% 53%, 60% 37%, 78% 61%, 59% 81%, 59% 66%, 0px 65%);clip-path: polygon(0px 51%, 61% 53%, 60% 37%, 78% 61%, 59% 81%, 59% 66%, 0px 65%);">
         </canves>
     `);
-     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex);
+     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex, "shape-left");
     zindex++;
 });
 
@@ -148,7 +148,7 @@ $(document).on("click","#star",function(){
         // }        
         
         // ctx.fill(); 
-        SaveCacheDateToLayer("target"+randomStringb,"shape",zindex);
+        SaveCacheDateToLayer("target"+randomStringb,"shape",zindex, "star");
         zindex++;
 });
 
