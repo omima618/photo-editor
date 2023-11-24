@@ -325,7 +325,7 @@ $(document).on("click",".header-lock-shape",function(){
 
 $(document).on("click",".header-delete-shape",function(){
 	var result = $(this).attr("data-target");
-	var layer_target = $("div[data-target="+result+"]").attr("layer-target");
+	var layer_target = $("#html-content-holder [data-target=" + result +"]").attr("layer-target");
 	$("[layer-id-nav="+layer_target+"]").remove();
 	$(".preview [data-target=" + result + "]").remove();
 });
