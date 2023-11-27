@@ -124,7 +124,7 @@ $(document).on("click","#star",function(){
     var randomStringb = randomString();
     $(".preview").append(`
    
-    <canves data-id="0" data-type="shape"  layer-type="shape" layer-target="target${randomStringb}" class="myCanvassssss resize-drag  shape max-w-full max-h-full border border-gray-800 rounded rounded-xl  resize-drag " style="z-index:${zindex};" width="350" height="250">
+    <canves data-id="0" data-type="shape"  layer-type="shape" layer-target="target${randomStringb}" class="myCanvassssss resize-drag  shape max-w-full max-h-full border border-transparent bg-white rounded-xl  resize-drag w-[100px] h-[100px]" style="z-index:${zindex}; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);">
         
     </canves>
     
