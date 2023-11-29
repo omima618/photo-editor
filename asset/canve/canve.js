@@ -17,24 +17,6 @@ $(document).on("click","#circle",function(){
     zindex++;
 });
 
-$(document).on("click","#Square-rtotat",function(){
-    var randomStringb = randomString();
-    $(".preview").append(`
-  
-    <canves data-id="0" data-type="shape"  layer-type="shape" layer-target="target${randomStringb}" class="resize-drag  shape max-w-full max-h-full border border-gray-800 rounded rounded-xl" style="  z-index:${zindex};border-width: 5px;
-    border-color: rgb(255, 255, 255);
-    width: 91px;
-    rotate: 45deg;
-    height: 91px;">
-    
-    </canves>
-
-    `);
-    
-     SaveCacheDateToLayer("target"+randomStringb,"shape",zindex, "square-rtotat");
-    zindex++;
-});
-
 $(document).on("click","#Square",function(){
      var randomStringb = randomString();
     $(".preview").append(`
