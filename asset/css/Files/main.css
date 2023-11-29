@@ -373,3 +373,8 @@ background:#00000000;
 #body-design img{
   width: 500px;
 }
+
+#html-content-holder  > *{
+  flex-shrink: 0;
+  flex-grow: 0;
+}
